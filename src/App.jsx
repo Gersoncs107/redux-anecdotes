@@ -1,5 +1,8 @@
 import { useSelector } from 'react-redux'
 import reducer from './reducers/anecdoteReducer'
+import { createStore } from 'redux'
+
+const store = createStore(reducer)
 
 const App = () => {
   const anecdotes = useSelector(state => state)
