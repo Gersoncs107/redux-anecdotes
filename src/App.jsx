@@ -5,7 +5,7 @@ import { createStore } from 'redux'
 const store = createStore(reducer)
 
 const App = () => {
-  const anecdotes = useSelector(state => state)
+  const anecdotes = useSelector(state => state.anecdotes)
 
   const vote = id => {
     store.dispatch({
