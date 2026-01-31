@@ -36,7 +36,7 @@ const App = () => {
       ))}
 
       <h2>create new</h2>
-      <form>
+      <form onSubmit={addAnecdote}>
         <div>
           <input />
         </div>
