@@ -9,12 +9,6 @@ const App = () => {
     dispatch(voteAnecdote(id))
   }
 
-  const addAnecdote = event => {
-    event.preventDefault()
-    const content = event.target.anecdote.value
-    event.target.anecdote.value = ''
-    dispatch(createAnecdote(content))
-  }
 
   return (
     <div>
