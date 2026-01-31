@@ -5,10 +5,7 @@ const App = () => {
   const dispatch = useDispatch()
 
   const vote = id => {
-    dispatch({
-      type: 'VOTE',
-      data: { id }
-    })
+    dispatch(voteAnecdote(id))
   }
 
   const addAnecdote = event => {
