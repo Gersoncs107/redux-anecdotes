@@ -9,6 +9,14 @@ const Filter = () => {
     // and then we call it with the action created by setFilter
     dispatch(setFilter(value))
   }
+
+  const setFilter = (value) => {
+    return {
+      type: 'SET_FILTER',
+      data: { value }
+    }
+  }
+  
   const style = {
     marginBottom: 10
   }
