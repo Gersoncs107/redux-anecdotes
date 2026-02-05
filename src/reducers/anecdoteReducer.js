@@ -54,4 +54,11 @@ export const createAnecdote = content => {
   }
 }
 
+export const setFilter = value => {
+  return {
+    type: 'SET_FILTER',
+    data: { value }
+  }
+}
+
 export default reducer
