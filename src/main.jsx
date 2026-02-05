@@ -4,6 +4,14 @@ import { Provider } from 'react-redux'
 
 import App from './App'
 import reducer from './reducers/anecdoteReducer'
+import { createStore, combineReducers } from 'redux'
+import anecdoteReducer from './reducers/anecdoteReducer'
+import filterReducer from './reducers/filterReducer' // Crie este novo arquivo
+
+const reducer = combineReducers({
+  anecdotes: anecdoteReducer,
+  filter: filterReducer
+})
 
 const store = createStore(reducer)
 
