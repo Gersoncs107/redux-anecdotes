@@ -34,9 +34,6 @@ const reducer = (state = initialState, action) => {
     case 'NEW_ANECDOTE':
       const newAnecdote = asObject(action.data.content)
       return [...state, newAnecdote]
-    case 'SET_FILTER':
-      const filterValue = action.data.value
-      return state.filter(anecdote => anecdote.content.toLowerCase().includes(filterValue.toLowerCase()))
     default:
   }
 
