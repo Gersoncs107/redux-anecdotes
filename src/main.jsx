@@ -8,12 +8,12 @@ import anecdoteReducer from './reducers/anecdoteReducer'
 import filterReducer from './reducers/filterReducer'
 
 
-const rootReducer = combineReducers({
-  anecdotes: anecdoteReducer,
-  filter: filterReducer
+const store = configureStore({
+  reducer: {
+    anecdotes: anecdoteReducer,
+    filter: filterReducer
+  }
 })
-
-const store = createStore(rootReducer)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
