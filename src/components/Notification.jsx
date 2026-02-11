@@ -14,11 +14,4 @@ const notificationSlice = createSlice({
 })
 
 export const { setNotification, clearNotification } = notificationSlice.actions
-//     borderWidth: 1,
-//     marginBottom: 10
-//   }
-
-//   return <div style={style}>render here notification...</div>
-// }
-
-// export default Notification
+export default notificationSlice.reducer
