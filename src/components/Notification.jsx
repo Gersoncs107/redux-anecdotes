@@ -1,14 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-const Notification = () => {
-  const style = {
-    border: 'solid',
-    padding: 10,
-    borderWidth: 1,
-    marginBottom: 10
+const notificationSlice = createSlice({
+  name: "notification",
+  initialState: "",
+  reducers: {
+    setNotification(state, action) {
+      return action.payload
+    },
+    clearNotification(state, action) {
+      return ""
+    }
   }
+})
 
-  return <div style={style}>render here notification...</div>
-}
+export const { setNotification, clearNotification } = notificationSlice.actions
+//     borderWidth: 1,
+//     marginBottom: 10
+//   }
 
-export default Notification
+//   return <div style={style}>render here notification...</div>
+// }
+
+// export default Notification
