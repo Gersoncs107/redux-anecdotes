@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { filterChange } from '../reducers/filterReducer'
+import  Notification from "./Notification";
 
 const Filter = () => {
   const dispatch = useDispatch()
