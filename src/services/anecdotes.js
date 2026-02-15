@@ -9,3 +9,5 @@ export const getAll = async () => {
   
   return response.json()
 }
+
+export default { getAll }
