@@ -34,6 +34,11 @@
       "id": "5ab1",
       "content": "NEW ANECDOTE CREATED",
       "votes": 0
+    },
+    {
+      "id": "4762",
+      "content": "NEW ANECDOTE WITH REDUX THUNK",
+      "votes": 0
     }
   ]
 }
