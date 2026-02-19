@@ -33,12 +33,12 @@
     {
       "id": "5ab1",
       "content": "NEW ANECDOTE CREATED",
-      "votes": 2
+      "votes": 3
     },
     {
       "id": "9740",
       "content": "NEW ANECDOTE WITH REDUX THUNK",
-      "votes": 1
+      "votes": 2
     }
   ]
 }
