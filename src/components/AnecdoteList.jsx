@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { voteAnecdote } from "../reducers/anecdoteReducer";
 import { setNotification } from "../reducers/notificationReducer";
 
+
 const AnecdoteList = () => {
   const anecdotes = useSelector(({ filter, anecdotes }) => {
     if (filter === 'ALL' || filter === '') {
